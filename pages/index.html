@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./index.js"></script>
+<!--     <script type="module" src="./index.js"></script> -->
     <script>
       tailwind.config = {
         theme: {
@@ -25,33 +25,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="container">
-      <h3>My Google Maps Demo</h3>
-      <!--The div element for the map -->
-      <div id="map"></div>
-      <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          const uluru = { lat: -25.344, lng: 131.031 };
-          // The map, centered at Uluru
-          const map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru,
-          });
-          // The marker, positioned at Uluru
-          const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-          });
-        }
+		<script type="module">
+		
+				</script>
+		<div class="container-fluid">
+		<div id="update"></div>
 
-        window.initMap = initMap;
-      </script>
+			<iframe src="https://pdao.retool.com/embedded/public/91478879-d3bc-40cd-ba16-c88105215675" width="100%" style="height: 100vh">
+		</div>
     </div>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuohTDXfyOEJpzhFW14ArhQJMf7FfLboY&callback=initMap&v=weekly"
-      defer
-    ></script>
   </body>
 </html>
